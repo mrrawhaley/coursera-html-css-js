@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.label {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    background-color: bisque;
+    font-weight: bold;
+    border: 1px black dotted;
+}
+
+.description {
+    margin-top: 36px;
+}
+
+div {
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+/**
+.row {
+    position: absolute;
+    border: 0px;
+}
+**/
+
+/* layout for large viewport */
+@media (min-width: 992px) {
+    .desktop-content {
+        float: left;
+        width: 30%;
+        border: 1px black dotted;
+    }
+
+    .desktop-divider {
+        float: left;
+        width: 5%;
+    }
+}
+
+/* layout for medium viewport */
+@media (min-width: 768px) and (max-width: 991px) {
+    .tablet-content {
+        float: left;
+        width: 47.5%;
+        border: 1px black dotted;
+    }
+
+    .tablet-divider {
+        float: left;
+        width: 5%;
+    }
+
+    #third {
+        width: 100%;
+        border: 1px black dotted;
+    }
+}
+
+/* layout for small viewport */
+@media (max-width: 767px) {
+    .mobile {
+        float: left;
+        width: 100%;
+        border: 1px black dotted;
+    }
+}
